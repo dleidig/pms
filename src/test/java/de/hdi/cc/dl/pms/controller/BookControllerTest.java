@@ -15,6 +15,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -32,9 +33,9 @@ public class BookControllerTest {
 	@Test
 	@DisplayName("api call get all books")
 	void testGetAllBooks() {
-		var responseEntity = client.get().uri("api/books").retrieve().toEntity(new ParameterizedTypeReference<List<Book>>() {
-		});
-		assertThat(responseEntity.getStatusCode(),is(HttpStatus.NO_CONTENT));
-		assertNull(responseEntity.getBody());
+		var responseEntity = client.get().uri("api/books").retrieve().toEntity(new ParameterizedTypeReference<List<Book>>() {});
+		assertThat(responseEntity.getStatusCode(),is(HttpStatus.OK));
+		assertNotNull(responseEntity.getBody());
+		assertThat(responseEntity.getBody().size(),is(9));
 	}
 }
