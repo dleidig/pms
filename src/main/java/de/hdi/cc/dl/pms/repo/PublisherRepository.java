@@ -9,6 +9,11 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
+/**
+ * Textfile based repo implementation of the PmsRepository.
+ * Loads the file on bean instantiation and splits all columns by semicolon
+ * throws a ResponseStatusException on errors
+ */
 @Repository
 public class PublisherRepository implements PmsRepository<Publisher> {
 

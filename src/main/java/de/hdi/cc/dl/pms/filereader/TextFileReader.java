@@ -9,6 +9,10 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.function.Function;
 
+/**
+ * Textfile Implementation of the FileReader interface.
+ * Requires the caller to implement the mapping functionality
+ */
 public class TextFileReader implements FileReader{
 
 	@Override

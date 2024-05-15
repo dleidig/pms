@@ -8,6 +8,11 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
+/**
+ *
+ * Loads the file on bean instantiation and splits all columns by semicolon
+ * throws a ResponseStatusException on errors
+ */
 @Service
 public class AuthorService {
 
