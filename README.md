@@ -1,1 +1,1 @@
-# pms
+# Publisher Management Service Prototype for the CC
