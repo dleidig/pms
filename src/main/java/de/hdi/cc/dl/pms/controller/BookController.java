@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * Rest Controller for the book entity
+ */
 @RestController
 public class BookController {
 
