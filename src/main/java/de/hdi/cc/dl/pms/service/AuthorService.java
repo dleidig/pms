@@ -1,9 +1,7 @@
 package de.hdi.cc.dl.pms.service;
 
 import de.hdi.cc.dl.pms.model.Author;
-import de.hdi.cc.dl.pms.model.Book;
 import de.hdi.cc.dl.pms.repo.AuthorRepository;
-import de.hdi.cc.dl.pms.repo.BookRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;

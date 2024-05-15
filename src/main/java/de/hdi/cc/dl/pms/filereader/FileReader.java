@@ -1,6 +1,5 @@
 package de.hdi.cc.dl.pms.filereader;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.function.Function;
 

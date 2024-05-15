@@ -1,7 +1,6 @@
 package de.hdi.cc.dl.pms.controller;
 
 import de.hdi.cc.dl.pms.model.Publisher;
-import de.hdi.cc.dl.pms.service.BookService;
 import de.hdi.cc.dl.pms.service.PublisherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

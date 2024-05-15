@@ -1,7 +1,7 @@
 package de.hdi.cc.dl.pms.controller;
 
 import de.hdi.cc.dl.pms.model.Book;
-import org.junit.jupiter.api.BeforeEach;
+import jakarta.annotation.PostConstruct;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +16,6 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class BookControllerTest {
@@ -25,8 +24,8 @@ public class BookControllerTest {
 	@LocalServerPort
 	private int port;
 
-	@BeforeEach
-	void setup() {
+	@PostConstruct
+	void setup(){
 		client = RestClient.builder().baseUrl("http://0.0.0.0:" + port).build();
 	}
 

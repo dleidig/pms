@@ -2,7 +2,6 @@ package de.hdi.cc.dl.pms.controller;
 
 import de.hdi.cc.dl.pms.model.Author;
 import de.hdi.cc.dl.pms.service.AuthorService;
-import de.hdi.cc.dl.pms.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
